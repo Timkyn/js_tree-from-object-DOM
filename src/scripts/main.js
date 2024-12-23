@@ -22,7 +22,7 @@ const tree = document.querySelector('#tree');
 
 function createTree(element, data) {
   // check and create <ul> element
-  if (!element) {
+  if (element === null) {
     const ulTree = document.createElement('ul');
 
     ulTree.setAttribute('id', 'tree');
